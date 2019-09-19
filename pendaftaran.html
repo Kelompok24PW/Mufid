@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Form Pendaftaran</title>
+    <style type="text/css">
+    body{
+      background-image: url(gambar.jpg);
+      background-size: 100%;
+      height: 80%;
+    }
+      .container{
+        position: absolute;
+        top: 5%;
+        left: 30%;
+        margin-bottom: 5%;
+        background: rgba(0, 0, 0, 0.5);
+        box-shadow: 0 0 10px 5px black;
+      }
+      .tulisan{
+        text-align: center;
+        font-family: lato;
+        font-weight: bold;
+        padding-top: 20px;
+        color: white;
+      }
+      table{
+        margin: auto;
+      }
+      .table td{
+        padding-bottom: 20px;
+        color: white;
+      }
+      .input {
+        border-radius: 5px;
+      }
+      .select {
+        border-radius: 7px;
+      }
+      .submit{
+        border-radius: 7px;
+        font-family: lato;
+        font-weight: bold;
+        border-radius: 5px;
+        background-color: blue;
+        color: white;
+      }
+      .gambar{
+        height: 20%;
+        width: 20%;
+        left: 200px;
+        position:relative;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img class="gambar" src="unej.png"/>
+      <h1 class="tulisan" >Form Pendaftaran Mahasiswa</h1>
+      <form action="">
+        <table class="table">
+          <tr>
+            <td><label form="name">Nomer Pendaftaran</label></td>
+            <td>: <input type="nu`number" class="input" required></td>
+          </tr>
+          <tr>
+            <td><label form="name">NISN</td>
+            <td>: <input type="number" class="input" required></td>
+          </tr>
+          <tr>
+            <td><label for="prodi">Prodi Yang Dipilih</label></td>
+            <td>:
+              <select class="select" name="pilih" required>
+                <option disabled >-- Silahkan Dipilih--</option>
+                <option value="si">Sistem Informasi</option>
+                <option value="ti">Teknologi Informasi</option>
+                <option value="if">Informastika</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td><label form="name">Nama Lengkap</label></td>
+            <td>: <input type="text" class="input" required></td>
+          </tr>
+          <tr>
+            <td><label form="name">Jenis Kelamin</label></td>
+            <td>:
+              <input type="radio" value="Laki-laki" class="input" name="jeniskelamin" required>
+              <label for="">Laki-laki</label>
+              <input type="radio" value="Perempuan" class="input" name="jeniskelamin" required>
+              <label for="">Perempuan</label>
+            </td>
+          </tr>
+          <tr>
+            <td><label form="name">Tempat Lahir</label></td>
+            <td>: <input type="text" class="input" required></td>
+          </tr>
+          <tr>
+            <td><label form="name">Tanggal Lahir</label></td>
+            <td>: <input type="date" class="input" required></td>
+          </tr>
+          <tr>
+            <td><label for="prodi">Agama</label></td>
+            <td>:
+              <select class="select" name="pilih" required>
+                <option disabled selected>--Silahkan Dipilih--</option>
+                <option value="">Islam</option>
+                <option value="">Kristen</option>
+                <option value="">Budha</option>
+                <option value="">Hindu</option>
+                <option value="">Konghucu</option>
+                <option value="">Lain-lain</option>
+                </optgroup>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td><label form="name">Alamat Lengkap</label></td>
+            <td>: <input type="text" class="input" required></td>
+          </tr>
+          <tr>
+            <td><label form="name">Asal Sekolah</td>
+            <td>: <input type="text" class="input" required></td>
+          </tr>
+          <tr>
+            <td><label form="name">Nama Ayah</td>
+            <td>: <input type="text" class="input" required></td>
+          </tr>
+          <tr>
+            <td><label form="name">Nama Ibu</td>
+            <td>: <input type="text" class="input" required></td>
+          </tr>
+          <tr>
+            <td><input type="submit" class="submit" value="Regestrasi"></td>
+          </tr>
+        </table>
+      </form>
+    </div>
+  </body>
+</html>
